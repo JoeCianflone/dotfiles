@@ -1,0 +1,105 @@
+{
+   "always_show_minimap_viewport": false,
+   "auto_complete_commit_on_tab": true,
+   "bold_folder_labels": true,
+   "caret_extra_width": 1,
+   "caret_style": "phase",
+   "color_scheme": "Packages/Predawn/predawn.tmTheme",
+   "detect_slow_plugins": false,
+   "draw_minimap_border": false,
+   "draw_white_space": "all",
+   "fade_fold_buttons": false,
+   "file_exclude_patterns":
+   [
+      "*.tmLanguage.cache",
+      "*.tmPreferences.cache",
+      "*.psd",
+      "*.psb",
+      "*.png",
+      "*.gif",
+      "*.jpg",
+      "*.jpeg",
+      "Gemfile.lock",
+      "*.pyc",
+      "*.pyo",
+      "*.exe",
+      "*.dll",
+      "*.ico",
+      "*.obj",
+      "*.o",
+      "*.a",
+      "*.lib",
+      "*.so",
+      "*.dylib",
+      "*.ncb",
+      "*.sdf",
+      "*.suo",
+      "*.pdb",
+      "*.idb",
+      ".DS_Store",
+      "*.pdf",
+      "*.mov",
+      "*.mp3",
+      "*.mp4",
+      "*.swf",
+      "*.xls",
+      "*.bak",
+      "*.backup",
+      "*.acorn",
+      "*.license",
+      "*.zargo*"
+   ],
+   "findreplace_small": true,
+   "folder_exclude_patterns":
+   [
+      ".bundle",
+      ".git",
+      ".sass-cache",
+      "*.esproj",
+      "*.tiles",
+      "*.svn"
+   ],
+   "font_face": "Inconsolata",
+   "font_options":
+   [
+      "no_bold",
+      "no_round",
+      "subpixel_antialias"
+   ],
+   "font_size": 22.0,
+   "gutter": true,
+   "hide_minimap": true,
+   "highlight_line": false,
+   "highlight_modified_tabs": true,
+   "ignored_packages":
+   [
+      "Markdown",
+      "Vintage"
+   ],
+   "index_exclude_patterns":
+   [
+      "*.log"
+   ],
+   "line_numbers": true,
+   "line_padding_bottom": 5,
+   "line_padding_top": 5,
+   "match_brackets_angle": true,
+   "overlay_scroll_bars": "enabled",
+   "preview_on_click": false,
+   "rulers":
+   [
+   ],
+   "scroll_past_end": true,
+   "shift_tab_unindent": true,
+   "show_minimap": false,
+   "spell_check": false,
+   "tab_completion": true,
+   "tab_size": 3,
+   "tabs_small": true,
+   "theme": "Spacegray.sublime-theme",
+   "translate_tabs_to_spaces": true,
+   "trim_trailing_white_space_on_save": true,
+   "use_tab_stops": false,
+   "word_wrap": false,
+   "wrap_width": 200
+}

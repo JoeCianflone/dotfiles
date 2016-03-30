@@ -10,7 +10,7 @@ cp .gemrc ~/.gemrc
 
 # Install some homebrew things.................................................
 brew install caskroom/cask/brew-cask
-brew install bash-compleation
+brew install bash-completion
 brew install git-flow
 brew install mongodb
 brew install rbenv

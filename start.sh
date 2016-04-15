@@ -9,7 +9,6 @@ cp .gemrc ~/.gemrc
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install some homebrew things.................................................
-brew install caskroom/cask/brew-cask
 brew install bash-completion
 brew install git-flow
 brew install mongodb
@@ -19,6 +18,7 @@ brew install wget
 brew install bash
 brew install node
 
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Configure Ruby...............................................................

@@ -1,6 +1,6 @@
 # Git Prompt ..................................................................
 if [ -f ~/.bash_prompt ]; then
-  source ~/.git_prompt
+  source ~/.bash_prompt
 fi
 
 # Show & Hide Files ...........................................................

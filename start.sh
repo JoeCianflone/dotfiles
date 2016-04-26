@@ -20,7 +20,6 @@ brew install wget
 brew install bash
 brew install node
 
-
 # Install PHP..................................................................
 brew tap homebrew/dupes
 brew tap homebrew/versions
@@ -46,7 +45,6 @@ brew install php70-mongodb
 # brew install php54-opcache
 # brew install php54-redis
 # brew install php54-mongodb
-
 
 # Configure Ruby...............................................................
 rbenv install 2.3.0

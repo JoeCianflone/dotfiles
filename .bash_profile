@@ -27,6 +27,8 @@ export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
 export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
+#export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
+#export PATH="$PATH:$(brew --prefix homebrew/php/php54)/bin"
 
 export EDITOR='subl -w'
 

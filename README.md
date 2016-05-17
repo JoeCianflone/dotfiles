@@ -8,7 +8,15 @@ my dotfiles
 4. wait
 
 ## Notes
+
+### PHP Version
 By default this will install PHP 7.0, if you want to use PHP 5.6 or PHP 5.4 you'll need to comment out the PHP70 stuff and uncomment the PHP5X stuff you want. You'll also need to uncomment the corresponding line in the `.bash_profile`
+
+### Sublime Preferences and Plugins
+The `Preferences.sublime-settings` file assumes that you're using some of the themes and plugins from the `installed-plugins` list.
+
+I also exclude all image types from search by default. This also means you won't see images in your sidebar. If you'd like to see images, you're going to need to look at the `file_exclude_patterns` section in the `Preferences.sublime-settings` JSON file and update accordingly.
+
 
 # License
 

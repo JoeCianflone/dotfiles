@@ -11,6 +11,7 @@
 + EditorConfig
 + Emmet
 + Emmet Css Snippets
++ Evernote
 + Git Config
 + GitGutter
 + Gutter Color

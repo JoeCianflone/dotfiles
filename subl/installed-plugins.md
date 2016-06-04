@@ -7,6 +7,7 @@
 + Blade Snippets
 + C Improved
 + Color Scheme - Frontend Delight
++ ColorSublime
 + DockBlockr
 + EditorConfig
 + Emmet

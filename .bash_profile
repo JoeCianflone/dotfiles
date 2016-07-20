@@ -71,10 +71,10 @@ alias gfff='git flow feature finish'
 
 alias homestead='function __homestead() { (cd ~/Sites/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
 
-# http://php-osx.liip.ch/
-alias php55='curl -s http://php-osx.liip.ch/install.sh | bash -s 5.5'
-alias php56='curl -s http://php-osx.liip.ch/install.sh | bash -s 5.6'
-alias php70='curl -s http://php-osx.liip.ch/install.sh | bash -s 7.0'
+# Fast PHP Switching ..........................................................
+alias php70='brew unlink php56 && brew unlink php54 && brew link php70'
+alias php56='brew unlink php54 && brew unlink php70 && brew link php56'
+alias php54='brew unlink php56 && brew unlink php70 && brew link php54'
 
 # Needed for RBENV ............................................................
 eval "$(rbenv init -)"

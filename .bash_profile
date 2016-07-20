@@ -36,7 +36,7 @@ export EDITOR='subl -w'
 alias killem="killall Finder"
 alias hulksmash='rm -Rf'
 alias reload="source ~/.bash_profile"
-alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
+alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 alias f='fzf'
 alias getKey="pbcopy < ~/.ssh/id_rsa.pub"
 

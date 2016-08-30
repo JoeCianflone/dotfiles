@@ -2,9 +2,9 @@
    "always_show_minimap_viewport": false,
    "auto_complete_commit_on_tab": true,
    "bold_folder_labels": true,
-   "caret_extra_width": 1,
+   "caret_extra_width": 0,
    "caret_style": "phase",
-   "color_scheme": "Packages/Predawn/predawn.tmTheme",
+   "color_scheme": "Packages/User/SublimeLinter/Adventure_Time (SL).tmTheme",
    "detect_slow_plugins": false,
    "draw_minimap_border": false,
    "draw_white_space": "all",
@@ -59,20 +59,21 @@
       "*.tiles",
       "*.svn"
    ],
-   "font_face": "Inconsolata",
+   "font_face": "Fira Code light",
    "font_options":
    [
       "no_bold",
       "no_round",
       "subpixel_antialias"
    ],
-   "font_size": 22.0,
+   "font_size": 18.0,
    "gutter": true,
    "hide_minimap": true,
    "highlight_line": false,
    "highlight_modified_tabs": true,
    "ignored_packages":
    [
+      "Markdown",
       "Vintage"
    ],
    "index_exclude_patterns":

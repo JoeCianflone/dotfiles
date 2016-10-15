@@ -54,6 +54,7 @@ rbenv global 2.3.0
 npm install -g handlebars
 npm install -g bower
 npm install -g gulp
+npm install -g yarn
 
 # Install some global Composer packages........................................
 composer global require joecianflone/heisenberg-toolkit-installer

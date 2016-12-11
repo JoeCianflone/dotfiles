@@ -7,12 +7,6 @@ fi
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Simple Server Start .........................................................
-function server() {
-    local port="${1:-8000}"
-    open "http://localhost:${port}/" && python -m SimpleHTTPServer "$port"
-}
-
 # Bash Completion .............................................................
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
@@ -69,6 +63,8 @@ alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 
 alias homestead='function __homestead() { (cd ~/Sites/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
+alias homestead-edit='subl ~/.homestead'
+alias homestead-restart='homestead halt && homestead up --provision'
 
 # Fast PHP Switching ..........................................................
 alias php70='brew unlink php56 && brew unlink php54 && brew link php70'

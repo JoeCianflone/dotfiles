@@ -26,11 +26,12 @@ brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
 # PHP 7.0 .....................................................................
-brew install php70 --with-homebrew-openssl --with-pgsql --with-mysql --with-homebrew-curl
-brew install php70-imagick
-brew install php70-opcache
-brew install php70-redis
-brew install php70-mongodb
+brew install php71 --with-homebrew-openssl --with-pgsql --with-mysql --with-homebrew-curl
+brew install php71-imagick
+brew install php71-opcache
+brew install php71-redis
+brew install php71-mongodb
+brew install php71-yaml
 
 # PHP 5.6 .....................................................................
 # brew install php56 --with-homebrew-openssl --with-pgsql --with-mysql --with-homebrew-curl
@@ -38,17 +39,11 @@ brew install php70-mongodb
 # brew install php56-opcache
 # brew install php56-redis
 # brew install php56-mongodb
-
-# PHP 5.4 .....................................................................
-# brew install php54 --with-homebrew-openssl --with-pgsql --with-mysql --with-homebrew-curl
-# brew install php54-imagick
-# brew install php54-opcache
-# brew install php54-redis
-# brew install php54-mongodb
+# brew install php56-yaml
 
 # Configure Ruby...............................................................
-rbenv install 2.3.0
-rbenv global 2.3.0
+rbenv install 2.3.3
+rbenv global 2.3.3
 
 # Install some global NPM packages.............................................
 npm install -g handlebars
@@ -59,10 +54,10 @@ npm install -g yarn
 # Install some global Composer packages........................................
 composer global require joecianflone/heisenberg-toolkit-installer
 composer global require squizlabs/php_codesniffer
-composer global require roave/securityadvisories
 composer global require laravel/lumen-installer
 composer global require laravel/installer
 composer global require hirak/prestissimo
+composer global require mettleshop/elvn
 composer global require phpunit/phpunit
 composer global require phpspec/phpspec
 

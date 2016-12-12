@@ -20,7 +20,8 @@ export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
 export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
-export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
+export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
+#export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php54)/bin"
 
@@ -67,9 +68,9 @@ alias homestead-edit='subl ~/.homestead'
 alias homestead-restart='homestead halt && homestead up --provision'
 
 # Fast PHP Switching ..........................................................
-alias php70='brew unlink php56 && brew unlink php54 && brew link php70'
-alias php56='brew unlink php54 && brew unlink php70 && brew link php56'
-alias php54='brew unlink php56 && brew unlink php70 && brew link php54'
+alias php71='brew unlink php56 && brew unlink php70 && brew link php71'
+alias php70='brew unlink php56 && brew unlink php71 && brew link php70'
+alias php56='brew unlink php71 && brew unlink php70 && brew link php56'
 
 # Needed for RBENV ............................................................
 eval "$(rbenv init -)"

@@ -12,6 +12,8 @@ brew install git-flow
 brew install composer
 #brew install mongodb
 brew install rbenv
+brew install ruby-build
+brew install gpg
 brew install redis
 #brew install mysql
 #brew install mariadb
@@ -57,7 +59,6 @@ rbenv global 2.3.3
 npm install -g yarn
 yarn global add handlebars bower gulp
 
-
 # Install some global Composer packages........................................
 composer global require joecianflone/heisenberg-toolkit-installer
 composer global require squizlabs/php_codesniffer
@@ -87,7 +88,6 @@ cp -R .valet/Drivers ~/.valet/Drivers
 
 # brew cask install browserstacklocal
 # brew cask install google-chrome
-# brew cask install sublime-text
 # brew cask install screenhero
 # brew cask install sourcetree
 # brew cask install sequel-pro
@@ -95,7 +95,6 @@ cp -R .valet/Drivers ~/.valet/Drivers
 # brew cask install rescuetime
 # brew cask install virtualbox
 # brew cask install imageoptim
-# brew cask install 1password
 # brew cask install spectacle
 # brew cask install chromium
 # brew cask install skyfonts

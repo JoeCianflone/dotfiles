@@ -19,7 +19,7 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
-export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
+# export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
@@ -70,7 +70,7 @@ alias gffs='git flow feature start'
 alias gfff='git flow feature finish'
 
 alias homestead='function __homestead() { (cd ~/Sites/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
-alias homestead-edit='subl ~/.homestead'
+alias homestead-edit='code ~/.homestead'
 alias homestead-restart='homestead halt && homestead up --provision'
 
 # Fast PHP Switching ..........................................................
@@ -78,5 +78,5 @@ alias php71='brew unlink php56 && brew unlink php70 && brew link php71'
 alias php70='brew unlink php56 && brew unlink php71 && brew link php70'
 alias php56='brew unlink php71 && brew unlink php70 && brew link php56'
 
-# Visual Studio Code ..........................................................
-vscode() { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+# Needed for RBENV ............................................................
+eval "$(rbenv init -)"

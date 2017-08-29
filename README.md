@@ -10,7 +10,7 @@ my dotfiles
 ## Notes
 
 ### PHP Version
-By default this will install PHP 7.0, if you want to use PHP 5.6 or PHP 5.4 you'll need to comment out the PHP70 stuff and uncomment the PHP5X stuff you want. You'll also need to uncomment the corresponding line in the `.bash_profile`
+By default this will install PHP 7.1, if you want to use PHP 7.0 or PHP 5.6 you'll need to comment out the PHP71 stuff and uncomment the PHP5X stuff you want. You'll also need to uncomment the corresponding line in the `.bash_profile`
 
 ### Sublime Preferences and Plugins
 The `Preferences.sublime-settings` file assumes that you're using some of the themes and plugins from the `installed-plugins` list.

@@ -23,22 +23,27 @@ export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
-#export PATH="$PATH:$(brew --prefix homebrew/php/php54)/bin"
 
-export EDITOR='subl -w'
+export EDITOR='vscode -w'
 
 # Aliases .....................................................................
+alias fucking="sudo"
 alias killem="killall Finder"
 alias hulksmash='rm -Rf'
 alias reload="source ~/.bash_profile"
 alias f='fzf'
 alias getKey="pbcopy < ~/.ssh/id_rsa.pub"
 
+alias build="npm run build"
+alias watch="npm run watch"
+alias run="npm run"
+
 alias up='sudo apachectl start'
 alias down='sudo apachectl stop'
 alias restart='sudo apachectl -k restart'
 
-alias artisan='php artisan'
+alias art='php artisan'
+alias art:fresh='php artisan migrate:fresh --seed'
 alias cept='vendor/bin/codecept'
 alias phpspec='vendor/bin/phpspec'
 alias phpunit='vendor/bin/phpunit'
@@ -57,6 +62,7 @@ alias gpd='git push origin develop'
 alias push='git push origin'
 alias pull='git pull origin'
 alias idiot='git reset --hard'
+alias gr='git reset --soft'
 alias gs='git status'
 alias gb='git checkout -b'
 alias merge='git merge'
@@ -72,5 +78,5 @@ alias php71='brew unlink php56 && brew unlink php70 && brew link php71'
 alias php70='brew unlink php56 && brew unlink php71 && brew link php70'
 alias php56='brew unlink php71 && brew unlink php70 && brew link php56'
 
-# Needed for RBENV ............................................................
-eval "$(rbenv init -)"
+# Visual Studio Code ..........................................................
+vscode() { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}

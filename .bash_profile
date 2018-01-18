@@ -20,7 +20,8 @@ export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
 # export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
-export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
+export PATH="$PATH:$(brew --prefix homebrew/php/php72)/bin"
+#export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
 #export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
 
@@ -31,8 +32,7 @@ alias fucking="sudo"
 alias killem="killall Finder"
 alias hulksmash='rm -Rf'
 alias reload="source ~/.bash_profile"
-alias f='fzf'
-alias getKey="pbcopy < ~/.ssh/id_rsa.pub"
+alias sshKey="pbcopy < ~/.ssh/id_rsa.pub"
 
 alias build="npm run build"
 alias watch="npm run watch"
@@ -42,17 +42,15 @@ alias up='sudo apachectl start'
 alias down='sudo apachectl stop'
 alias restart='sudo apachectl -k restart'
 
-alias art='php artisan'
-alias art:fresh='php artisan migrate:fresh --seed'
-alias cept='vendor/bin/codecept'
-alias phpspec='vendor/bin/phpspec'
+alias art='php art'
+alias fresh='php artisan migrate:fresh --seed'
 alias phpunit='vendor/bin/phpunit'
 
 alias mysqlstart='mysql.server start'
 alias mysqlrestart='mysql.server restart'
 alias mysqlstop='mysql.server stop'
 
-alias co='git checkout'
+# alias co='git checkout'
 alias rbm='git rebase -i master'
 alias rbd='git rebase -i develop'
 alias rb='git rebase -i'
@@ -74,9 +72,10 @@ alias homestead-edit='code ~/.homestead'
 alias homestead-restart='homestead halt && homestead up --provision'
 
 # Fast PHP Switching ..........................................................
-alias php71='brew unlink php56 && brew unlink php70 && brew link php71'
-alias php70='brew unlink php56 && brew unlink php71 && brew link php70'
-alias php56='brew unlink php71 && brew unlink php70 && brew link php56'
+alias php72='brew unlink php56 && brew unlink php70 && brew unlink php71 && brew link php72'
+alias php71='brew unlink php56 && brew unlink php70 && brew unlink php72 && brew link php71'
+alias php70='brew unlink php56 && brew unlink php71 && brew unlink php72 && brew link php70'
+alias php56='brew unlink php72 && brew unlink php71 && brew unlink php70 && brew link php56'
 
 # Needed for RBENV ............................................................
 eval "$(rbenv init -)"

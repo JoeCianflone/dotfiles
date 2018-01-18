@@ -1,0 +1,25 @@
+[alias]
+    prune = fetch --prune
+[push]
+    default = simple
+    followTags = true
+[user]
+    name = Joe Cianflone
+    email = joe@cianflone.co
+[color]
+    ui = true
+[core]
+    excludesfile = /Users/JoeCianflone/.gitignore_global
+[transfer]
+    fsckobjects = true
+[status]
+    showUntrackedFiles = all
+[diff]
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+[merge]
+    ff = only
+    conflictstyle = diff3

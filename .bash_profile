@@ -3,10 +3,6 @@ if [ -f ~/.bash_prompt ]; then
   source ~/.bash_prompt
 fi
 
-# Show & Hide Files ...........................................................
-alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-
 # Bash Completion .............................................................
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
@@ -19,63 +15,37 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
-# export PATH="$PATH:$(brew --prefix coreutils)/libexec/gnubin"
 export PATH="$PATH:$(brew --prefix homebrew/php/php72)/bin"
-#export PATH="$PATH:$(brew --prefix homebrew/php/php71)/bin"
-#export PATH="$PATH:$(brew --prefix homebrew/php/php70)/bin"
-#export PATH="$PATH:$(brew --prefix homebrew/php/php56)/bin"
-
 export EDITOR='vscode -w'
 
 # Aliases .....................................................................
-alias fucking="sudo"
 alias killem="killall Finder"
-alias hulksmash='rm -Rf'
+alias videoKill="killall VDCAssistant"
 alias reload="source ~/.bash_profile"
-alias sshKey="pbcopy < ~/.ssh/id_rsa.pub"
+alias pubkey="pbcopy < ~/.ssh/id_rsa.pub"
+
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
 alias build="npm run build"
 alias watch="npm run watch"
 alias run="npm run"
 
-alias up='sudo apachectl start'
-alias down='sudo apachectl stop'
-alias restart='sudo apachectl -k restart'
-
-alias art='php art'
+alias art='php artisan'
 alias fresh='php artisan migrate:fresh --seed'
-alias phpunit='vendor/bin/phpunit'
+alias pu='vendor/bin/phpunit'
 
-alias mysqlstart='mysql.server start'
-alias mysqlrestart='mysql.server restart'
-alias mysqlstop='mysql.server stop'
-
-# alias co='git checkout'
-alias rbm='git rebase -i master'
-alias rbd='git rebase -i develop'
-alias rb='git rebase -i'
 alias gac='git add --all && git commit -am'
-alias gpm='git push origin master'
-alias gpd='git push origin develop'
-alias push='git push origin'
-alias pull='git pull origin'
-alias idiot='git reset --hard'
-alias gr='git reset --soft'
 alias gs='git status'
-alias gb='git checkout -b'
-alias merge='git merge'
-alias gffs='git flow feature start'
-alias gfff='git flow feature finish'
 
-alias homestead='function __homestead() { (cd ~/Sites/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
-alias homestead-edit='code ~/.homestead'
-alias homestead-restart='homestead halt && homestead up --provision'
+alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
+alias homestead-edit='code ~/Homestead/.homestead'
+alias host-edit='sudo subl /etc/hosts';
 
-# Fast PHP Switching ..........................................................
-alias php72='brew unlink php56 && brew unlink php70 && brew unlink php71 && brew link php72'
-alias php71='brew unlink php56 && brew unlink php70 && brew unlink php72 && brew link php71'
-alias php70='brew unlink php56 && brew unlink php71 && brew unlink php72 && brew link php70'
-alias php56='brew unlink php72 && brew unlink php71 && brew unlink php70 && brew link php56'
+alias cp-hosts='cp /etc/hosts ~/Sites/PERSONAL/dotfiles'
+alias cp-homestead='cp ~/Homestead/homestead.yaml ~/Sites/PERSONAL/dotfiles'
 
-# Needed for RBENV ............................................................
-eval "$(rbenv init -)"
+

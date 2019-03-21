@@ -40,32 +40,20 @@ brew install composer
 brew install redis
 
 # Install PHP..................................................................
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/php
+brew install php
 
-# PHP 7.2 .....................................................................
-brew install php72 
-brew install php72-imagick 
-brew install php72-opcache 
-brew install php72-redis 
-brew install php72-yaml 
-brew install php72-xdebug
+pecl install xdebug
+pecl install yaml
+pecl install redis
+pecl install imagick 
 
-# PHP 7.1 .....................................................................
-# brew install php71 
-# brew install php71-imagick 
-# brew install php71-opcache 
-# brew install php71-redis 
-# brew install php71-yaml
-# brew install php71-xdebug
 
 # Install some global NPM packages.............................................
 npm install -g yarn 
+npm install -g sass
 npm install -g gulp 
 npm install -g vue-cli 
 npm install -g webpack 
-npm install -g handlebars
 npm install -g typescript
 
 # Install some global Composer packages........................................
@@ -88,7 +76,6 @@ mkdir PROJECTS
 cd ~
 git clone https://github.com/laravel/homestead.git ~/Homestead
 cd ~/Homestead
-git checkout v7.0.1
 bash init.sh
 
 # Copy some files over to the right place......................................

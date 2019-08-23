@@ -73,9 +73,9 @@ mkdir ~/Sites
 cd ~/Sites
 
 mkdir CLIENTS
-mkdir PERSONAL
-mkdir OSS
 mkdir PROJECTS
+mkdir OPEN-SOURCE
+mkdir MCS
 
 # Create your SSH ket .........................................................
 echo -n "Generate an SSH key for $email? (y/n) "
@@ -97,6 +97,10 @@ bash init.sh
 cd ~/Sites
 cd PERSONAL
 git clone git@github.com:JoeCianflone/rebase.git
+
+cd ../OPEN-SOURCE
+git clone git@github.com:lysyi3m/macos-terminal-themes.git
+
 
 # Copy some files over to the right place......................................
 cp .bash_profile  ~/.bash_profile

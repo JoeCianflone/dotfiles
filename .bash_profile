@@ -1,8 +1,3 @@
-# Git Prompt ..................................................................
-# if [ -f ~/.bash_prompt ]; then
-#   source ~/.bash_prompt
-# fi
-
 # Bash Completion .............................................................
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
@@ -23,8 +18,9 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
-export PATH="$PATH:$(brew --prefix homebrew/php/php72)/bin"
-export EDITOR='vscode -w'
+export EDITOR='code -w'
+
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # Aliases .....................................................................
 alias killem="killall Finder"
@@ -40,10 +36,7 @@ alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false &
 
 alias gac='git add --all && git commit -am'
 alias gs='git status'
+alias nah='git reset --hard'
 
 alias homestead='function __homestead() { (cd ~/Homestead && vagrant $*); unset -f __homestead; }; __homestead'
-alias homestead-edit='code ~/Homestead/.homestead'
-alias host-edit='sudo subl /etc/hosts';
-
-alias cp-hosts='cp /etc/hosts ~/Sites/PERSONAL/dotfiles'
-alias cp-homestead='cp ~/Homestead/homestead.yaml ~/Sites/PERSONAL/dotfiles'
+alias new-site='sudo code /etc/hosts ~/Homestead/Homestead.yaml'

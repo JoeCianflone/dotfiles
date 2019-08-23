@@ -9,5 +9,4 @@
 ::1             localhost
 fe80::1%lo0	localhost
 
-192.168.10.10 joecianflone.test
-192.168.10.10 thedevbookclub.test
+192.168.10.10 scooby.test

@@ -1,53 +1,16 @@
----
-ip: "192.168.10.10"
-memory: 2048
+ip: 192.168.10.10
+memory: 4096
 cpus: 1
 provider: virtualbox
-
+mongodb: false
 authorize: ~/.ssh/id_rsa.pub
-
 keys:
     - ~/.ssh/id_rsa
-
 folders:
-      # Rutgers Sites
-    - map: ~/Sites/RUTGERS/homework1
-      to: /home/vagrant/sites/RUTGERS/homework1
-
-      # Personal Sites
-    - map: ~/Sites/PERSONAL/joecianflone
-      to: /home/vagrant/sites/PERSONAL/joecianflone
-
-    # Product Sites
-    - map: ~/Sites/PRODUCTS/thedevbookclub
-      to: /home/vagrant/sites/PRODUCTS/thedevbookclub
+    - { map: /Users/JoeCianflone/Sites/CLIENTS/mystery-inc/scooby, to: /home/vagrant/sites/CLIENTS/mystery-inc/scooby }
 
 sites:
-    # Rutgers Sites
-    - map: ruhomework1.test
-      to: /home/vagrant/sites/RUTGERS/homework1
-
-    # Personal Sites
-    - map: joecianflone.test
-      to: /home/vagrant/sites/PERSONAL/joecianflone/public/
-
-    # Product Sites
-    - map: thedevbookclub.test
-      to: /home/vagrant/sites/PRODUCTS/thedevbookclub/public
+    - { map: scooby.test, to: /home/vagrant/sites/CLIENTS/mystery-inc/scooby/public }
 
 databases:
-    - joecianflone
-    - devbookclub
-
-# blackfire:
-#     - id: foo
-#       token: bar
-#       client-id: foo
-#       client-token: bar
-
-# ports:
-#     - send: 50000
-#       to: 5000
-#     - send: 7777
-#       to: 777
-#       protocol: udp
+    - scooby

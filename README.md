@@ -1,6 +1,6 @@
 # Dotfiles
 
-I'm a lazy developer, but I'm also fairly opinionated about my system setup. I need a way to install everything I need for a new dev system, without searching. DevStart is my answer. This gets any computer I need up and running as a developer machine in a couple of minutes. 
+I'm a lazy developer, but I'm also fairly opinionated about my system setup. I need a way to install everything I need for a new dev system, without searching. DevStart is my answer. This gets any computer I need up and running as a developer machine in a couple of minutes.
 
 ## Install Instructions
 
@@ -9,35 +9,10 @@ I'm a lazy developer, but I'm also fairly opinionated about my system setup. I n
 3. run `start.sh`
 4. follow prompts and wait
 
-## Notes
+## Because you'll forget how to install something...
 
-### Manual Installs
-Here's a list of things I'll need to install manually, because they're not in the App Store (assuming default install, of OS). 
-+ AppCleaner
-+ Chrome
-+ Dropbox
-+ FileZilla
-+ Firefox
-+ Firefox Developer Edition
-+ Flux
-+ OBS
-+ Opera
-+ SequelPro
-+ Sketch
-+ SkyFonts
-+ Sophos
-+ SublimeText
-+ VLC
-+ Vagrant
-+ VirtualBox
-+ VisualStudio Code
-+ Zeplin
-+ Zoom
-
-### PHP Version
-By default this will install PHP 7.2, if you want to use PHP 7.1 or 7.0 or PHP 5.6 you'll need to update the `start.sh` file and your `.bash_profile` too.
-
-I also exclude all image types from search by default. This also means you won't see images in your sidebar. If you'd like to see images, you're going to need to look at the `file_exclude_patterns` section in the `Preferences.sublime-settings` JSON file and update accordingly.
+When you forget how to install something take a look at these instead of google:
+https://stitcher.io/blog/php-73-upgrade-mac
 
 # License
 

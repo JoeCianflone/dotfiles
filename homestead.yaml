@@ -7,10 +7,16 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - { map: /Users/JoeCianflone/Sites/CLIENTS/mystery-inc/scooby, to: /home/vagrant/sites/CLIENTS/mystery-inc/scooby }
+    - { map: /Users/JoeCianflone/Sites/SHYFT/mycommunitysite, to: /home/vagrant/sites/SHYFT/mycommunitysite }
+    - { map: /Users/JoeCianflone/Sites/SHYFT/beckerballot, to: /home/vagrant/sites/SHYFT/beckerballot }
+    - { map: /Users/JoeCianflone/Sites/PROJECTS/rebase, to: /home/vagrant/sites/PROJECTS/rebase }
 
 sites:
-    - { map: scooby.test, to: /home/vagrant/sites/CLIENTS/mystery-inc/scooby/public }
+    - { map: mycommunitysite.test, to: /home/vagrant/sites/SHYFT/mycommunitysite/public }
+    - { map: beckerballot.test, to: /home/vagrant/sites/SHYFT/beckerballot/public }
+    - { map: rebase.test, to: /home/vagrant/sites/PROJECTS/rebase/public }
 
 databases:
-    - scooby
+    - mycommunitysite_shared
+    - beckerballot_shared
+    - rebase_shared

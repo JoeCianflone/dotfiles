@@ -58,11 +58,13 @@ pecl install imagick
 yarn global add vue-cli
 yarn global add webpack
 yarn global add typescript
+yarn global add parcel-bundler
 
 # Install some global Composer packages ______________________________________
 composer global require laravel/installer
 composer global require hirak/prestissimo
 composer global require phpunit/phpunit
+composer global require phpstan/phpstan
 
 # Dev Folders Ready ___________________________________________________________
 mkdir ~/Sites
@@ -72,8 +74,9 @@ mkdir CLIENTS
 mkdir PROJECTS
 mkdir OPEN-SOURCE
 mkdir SHYFT
+mkdir RUTGERS
 
-# Create your SSH ket _________________________________________________________
+# Create your SSH key _________________________________________________________
 echo -n "Generate an SSH key for $email? (y/n) "
 read genssh
 
@@ -96,11 +99,18 @@ cd SHYFT
 git clone git@github.com:JoeCianflone/beckerballot.git
 git clone git@github.com:JoeCianflone/mycommunitysite.git
 
-cd PROJECTS
+cd ../PROJECTS
 git clone git@github.com:JoeCianflone/rebase.git
+git clone git@github.com:JoeCianflone/joecianflone.git
 
 cd ../OPEN-SOURCE
 git clone git@github.com:lysyi3m/macos-terminal-themes.git
+
+cd ../RUTGERS
+git clone git@github.com/JoeCianflone/RU-Web2.git
+
+cd ../CLIENTS
+git clone git@github.com/JoeCianflone/images.git
 
 
 # Copy some files over to the right place _____________________________________
@@ -109,3 +119,6 @@ cp .gemrc ~/.gemrc
 cp .gitconfig ~/.gitconfig
 cp .gitignore ~/.gitignore_global
 cp -R homestead.yaml ~/Homestead/homestead.yaml
+
+# Done, reload the browser
+source ~/.bash_profile

@@ -58,7 +58,7 @@ function save-homestead() {
    echo "File copied to ~/_homestead-backup/Homestead.yaml"
 }
 
-function rebase () {
+function rebase() {
    folder=$1
    shift
 

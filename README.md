@@ -8,7 +8,3 @@ I'm a lazy developer, but I'm also fairly opinionated about my system setup. I n
 2. `cd` into the directory
 3. run `start.sh`
 4. follow prompts and wait
-
-## Because you'll forget how to install something...
-
-When you forget how to install something take a look at these instead of google:

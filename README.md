@@ -1,6 +1,6 @@
 # Dotfiles
 
-I'm a lazy developer, but I'm also fairly opinionated about my system setup. I need a way to install everything I need for a new dev system, without searching. DevStart is my answer. This gets any computer I need up and running as a developer machine in a couple of minutes.
+I think every developer knows what these are by now. These are mine, plus some extra stuff to make switching to a new computer easier.
 
 ## Install Instructions
 

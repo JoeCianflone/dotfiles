@@ -1,0 +1,63 @@
+"*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+  "autocomplete-plus":
+    fileBlacklist: [
+      "*.md"
+      "*.markdown"
+      "*.asciidoc"
+      "*.adoc"
+      "*.txt"
+    ]
+  "block-cursor":
+    global:
+      blinkOff:
+        backgroundColor: "#abb2bf"
+        borderColor: "#abb2bf"
+      blinkOn:
+        backgroundColor: "rgba(171, 178, 191, 0.2)"
+        borderColor: "rgba(171, 178, 191, 0.2)"
+        borderStyle: "bordered-box"
+      pulseDuration: 1
+  core:
+    disabledPackages: [
+      "language-markdown"
+      "spell-check"
+    ]
+    telemetryConsent: "no"
+  "default-language":
+    defaultLanguage: "markdown"
+  editor:
+    defaultFontSize: 24
+    fontFamily: "Inconsolata, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 25
+    lineHeight: 1.8
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showLineNumbers: false
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "4efee1ae-82ab-4e46-9093-2289ebb057e5"
+  "language-markdown": {}
+  "markdown-writer":
+    fileExtension: ".md"
+  "spell-check":
+    addKnownWords: true
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.rst"
+      "text.restructuredtext"
+      "text.md"
+    ]
+    knownWords: [
+      "Fucking"
+      "Sublime"
+      "neurotypical"
+      "laravel"
+      "AsciiDoc"
+    ]

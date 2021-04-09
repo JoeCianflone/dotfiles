@@ -1,5 +1,14 @@
 #!/bin/sh
 
+DOTFILES_DIR=''
+
+
+if [ "$DOTFILES_DIR" = "" ]
+then
+    echo "Cannot continue until you set DOTFILES_DIR in start.sh"
+    exit
+fi
+
 echo -n "Enter your name: "
 read name
 
@@ -22,29 +31,34 @@ sed -i '' 's/_EMAIL_/'$email'/g' .gitconfig
 sed -i '' 's/_NAME_/'$name'/g' .gitconfig
 
 # Install Homebrew ____________________________________________________________
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+. "$DOTFILES_DIR/_setup/brew.sh"
 
-# Install rust and rustup _____________________________________________________
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup default nightly
+# Install Fonts _______________________________________________________________
+. "$DOTFILES_DIR/_setup/fonts.sh"
 
-# Install PHP _________________________________________________________________
-pecl install xdebug
-pecl install yaml
-pecl install redis
-pecl install imagick
+# Install PHP _______________________________________________________________
+. "$DOTFILES_DIR/_setup/php.sh"
 
-# Install some global NPM packages ____________________________________________
-yarn global add vue-cli
-yarn global add webpack
-yarn global add typescript
-yarn global add parcel-bundler
+# Install Yarn _______________________________________________________________
+. "$DOTFILES_DIR/_setup/yarn.sh"
 
-# Install some global Composer packages ______________________________________
-composer global require laravel/installer
-composer global require hirak/prestissimo
-composer global require phpunit/phpunit
-composer global require phpstan/phpstan
+# Symlinks _______________________________________________________________
+. "$DOTFILES_DIR/_setup/links.sh"
+
+# Install Folders _______________________________________________________________
+. "$DOTFILES_DIR/_setup/folders.sh"
+
+# Install Casks _______________________________________________________________
+. "$DOTFILES_DIR/_setup/casks.sh"
+
+# Install VSCode Settings _______________________________________________________________
+# . "$DOTFILES_DIR/_setup/editors.sh"
+
+
+
+
+
+
 
 
 

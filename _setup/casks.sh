@@ -15,3 +15,5 @@ brew install --cask spectacle
 brew install --cask bitwarden
 brew install --cask openemu
 brew install --cask discord
+brew install --cask the-unarchiver
+brew install --cask appcleaner

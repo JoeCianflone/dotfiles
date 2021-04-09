@@ -1,3 +1,4 @@
+#!/bin/sh
 
 brew install font-inconsolata
 brew install font-open-sans

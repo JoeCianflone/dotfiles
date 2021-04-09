@@ -25,3 +25,22 @@ I think every developer knows what these are by now. These are mine, plus some e
 11. Clone from Github
 12. Install Casks
 13. Symlink vscode & atom settings
+
+## Folder Structure
+
+This will set up a folder structure for where I store important things. The dotfiles get copied there.
+
+```
+~/.repositories
+   /dotfiles
+   /Notes
+   /Sites
+      /RUTGERS
+      /SHYFT
+      /PROJECTS
+   /Videos
+      /RAW
+      /ZOOM
+      /DAVINCI_OPTIMIZED
+      /FINAL_RENDER
+```

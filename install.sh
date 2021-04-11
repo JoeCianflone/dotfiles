@@ -17,6 +17,7 @@ mkdir RUTGERS
 mkdir PROJECTS
 
 cd ../Videos
+mkdir ASSETS
 mkdir RAW
 mkdir ZOOM
 mkdir OPTIMIZED

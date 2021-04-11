@@ -3,7 +3,7 @@
 pecl install xdebug
 pecl install yaml
 pecl install redis
-pecl install imagick    
+pecl install imagick
 
 composer global require laravel/installer
 composer global require laravel/valet

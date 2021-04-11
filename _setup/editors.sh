@@ -32,15 +32,22 @@ cd "$DOTFILES_DIR/Sites"
 cd SHYFT
 valet park
 
-git clone github.com/JoeCianflone/community.git
-git clone github.com/JoeCianflone/beckerballot.git
+git clone  git@github.com:JoeCianflone/community.git
+git clone  git@github.com:JoeCianflone/beckerballot.git
 
 cd ../PROJECTS
 valet park
+
+git clone git@github.com:JoeCianflone/buildo-baggins.git
 
 cd ../RUTGERS
 valet park
 
 cd "$DOTFILES_DIR/Notes"
-git clone github.com/JoeCianflone/Notes .
+git clone git@github.com:/JoeCianflone/Notes .
+
+cd "$DOTFILES_DIR/Video/"
+git clone git@github.com:JoeCianflone/video-assets.git ASSETS
+
+
 fi

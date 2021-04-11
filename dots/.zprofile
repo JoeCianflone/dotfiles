@@ -10,6 +10,9 @@ export EDITOR='code -w'
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
+export REPOSITORY_HOME="$HOME/.repositories"
+export DOTFILES_DIR="$REPOSITORY_HOME/dotfiles"
+
 # Aliases _____________________________________________________________________
 alias killem="killall Finder" 
 alias videoKill="killall VDCAssistant"
@@ -40,23 +43,24 @@ function book() {
 
 function editorexport() {
     # Copy all the stuff for VSCode...
-    cp ~/.vscode/settings.json ~/.repositories/.vscode/
-    echo '#!/bin/sh' > ~/.repositories/dotfiles/.vscode/extensions.sh
-    code --list-extensions | xargs -L 1 echo code --install-extension >> ~/.repositories/dotfiles/.vscode/extensions.sh
+    cp ~/.vscode/settings.json "$DOTFILES_DIR/.vscode/"
+
+    echo '#!/bin/sh' > "$DOTFILES_DIR.vscode/extensions.sh"
+    code --list-extensions | xargs -L 1 echo code --install-extension >> "$DOTFILES_DIR.vscode/extensions.sh"
 
     # Copy all the stuff for Atom...
-    apm list --installed --bare > ~/.repositories/dotfiles/.atom/package.txt
+    apm list --installed --bare > "$DOTFILES_DIR.atom/package.txt"
     cp ~/.atom/config.cson ~/.repositories/.atom/config.cson
     cp ~/.atom/keymap.cson ~/.repositories/.atom/keymap.cson
 }
 
 function editorimport() {
     # Install Settings and Get VSCode working...
-    cp ~/.repositories/.vscode/settings.json ~/.vscode/settings.json
-    . ~/.repositories/.vscode/extensions.sh
+    cp "$DOTFILES_DIR/settings.json" ~/.vscode/settings.json
+    . "$DOTFILES_DIR/extensions.sh"
 
     # Install packages and get Atom working...
-    apm install --packages-file ~/.repositories/dotfiles/.atom/package.txt
+    apm install --packages-file "$DOTFILES_DIR.atom/package.txt"
     cp ~/.repositories/.atom/config.cson ~/.atom/config.cson
     cp ~/.repositories/.atom/keymap.cson ~/.atom/keymap.cson
 }

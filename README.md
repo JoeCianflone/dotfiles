@@ -24,17 +24,6 @@ It will then download the dotfiles repo to `~.repositories/dotfiles` and you wil
 
 You'll need to `cd` into the correct folder then you can run `start.sh` that will handle the rest for you. There are a couple of prompts in the beginning you'll need to follow.
 
-## What this does in what order
+## Step 3: Manual Stuff
 
-2. Ask for email
-3. Set SSH keys
-   - Copy SSH key and drop into Github whil the rest is going on
-4. Install Homebrew
-5. Install Fonts
-6. Install PHP
-7. Install Composer Deps
-8. Install Yarn Deps
-9. Symlink `dots`
-10. Clone from Github
-11. Install Casks
-12. Symlink vscode & atom settings
+The OBS settings are going to need to be imported manually, there's no way to do that via the CLI.

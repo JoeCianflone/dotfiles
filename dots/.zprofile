@@ -28,4 +28,35 @@ alias gp='git push origin'
 alias gs='git status'
 alias nah='git reset --hard'
 
-alias dumpextensions='code --list-extensions | xargs -L 1 echo code --install-extension'
+# Simple Function  ____________________________________________________________
+function pdword() {
+   pandoc -t docx  $1.md -o $1.docx
+}
+
+function book() {
+  pandoc $1.md --standalone -o $2.odt
+  open $2.odt
+}
+
+function editorexport() {
+    # Copy all the stuff for VSCode...
+    cp ~/.vscode/settings.json ~/.repositories/.vscode/
+    echo '#!/bin/sh' > ~/.repositories/dotfiles/.vscode/extensions.sh
+    code --list-extensions | xargs -L 1 echo code --install-extension >> ~/.repositories/dotfiles/.vscode/extensions.sh
+
+    # Copy all the stuff for Atom...
+    apm list --installed --bare > ~/.repositories/dotfiles/.atom/package.txt
+    cp ~/.atom/config.cson ~/.repositories/.atom/config.cson
+    cp ~/.atom/keymap.cson ~/.repositories/.atom/keymap.cson
+}
+
+function editorimport() {
+    # Install Settings and Get VSCode working...
+    cp ~/.repositories/.vscode/settings.json ~/.vscode/settings.json
+    . ~/.repositories/.vscode/extensions.sh
+
+    # Install packages and get Atom working...
+    apm install --packages-file ~/.repositories/dotfiles/.atom/package.txt
+    cp ~/.repositories/.atom/config.cson ~/.atom/config.cson
+    cp ~/.repositories/.atom/keymap.cson ~/.atom/keymap.cson
+}

@@ -51,7 +51,7 @@ echo "Setting up symlinks..."
 
 # Install Folders _______________________________________________________________
 echo "Installing Valet and Code Download..."
-. "$DOTFILES_DIR/_setup/folders.sh"
+. "$DOTFILES_DIR/_setup/code.sh"
 
 # Install Casks _______________________________________________________________
 . "$DOTFILES_DIR/_setup/casks.sh"

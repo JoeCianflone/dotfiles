@@ -49,15 +49,17 @@ echo "Installing Yarn...."
 echo "Setting up symlinks..."
 . "$DOTFILES_DIR/_setup/links.sh"
 
+# Install Casks _______________________________________________________________
+echo "Installing Casks..."
+. "$DOTFILES_DIR/_setup/casks.sh"
+
 # Install Folders _______________________________________________________________
 echo "Installing Valet and Code Download..."
 . "$DOTFILES_DIR/_setup/code.sh"
 
-# Install Casks _______________________________________________________________
-. "$DOTFILES_DIR/_setup/casks.sh"
-
 # Install VSCode Settings _______________________________________________________________
-# . "$DOTFILES_DIR/_setup/editors.sh"
+echo "Installing Editors..."
+. "$DOTFILES_DIR/_setup/editors.sh"
 
 
 

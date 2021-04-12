@@ -19,6 +19,11 @@ alias videoKill="killall VDCAssistant"
 alias reload="exec $SHELL -l"
 alias pubkey="pbcopy < $HOME/.ssh/id_rsa.pub"
 
+# Show and hide hidden files in Finder
+alias showfiles="defaults write com.apple.Finder AppleShowAllFiles true && killall Finder"
+alias hidefiles="defaults write com.apple.Finder AppleShowAllFiles false && killall Finder"
+
+# Show and Hide desktop icons for recording
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
@@ -30,6 +35,13 @@ alias gpp='git push origin primary'
 alias gp='git push origin'
 alias gs='git status'
 alias nah='git reset --hard'
+
+alias repos="cd $REPOSITORY_HOME"
+alias dotfiles="cd $DOTFILES_DIR" 
+
+# This is probably not necessary, but I'd rather be safe than sorry
+# This file is ignored and does not go to github
+. "$DOTFILES_DIR/dots/ssh"
 
 # Simple Function  ____________________________________________________________
 function pdword() {
@@ -64,3 +76,4 @@ function editorimport() {
     cp ~/.repositories/.atom/config.cson ~/.atom/config.cson
     cp ~/.repositories/.atom/keymap.cson ~/.atom/keymap.cson
 }
+

@@ -4,13 +4,13 @@
     default = simple
     followTags = true
 [user]
-    name = _NAME_
-    email = _EMAIL_
+    name = Joe Cianflone
+    email = joe@cianflone.co
 [color]
     ui = true
     interactive = auto
 [core]
-    excludesfile = /Users/_USER_/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [transfer]
     fsckobjects = true
 [status]

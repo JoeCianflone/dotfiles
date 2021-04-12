@@ -8,26 +8,13 @@ then
     exit
 fi
 
-echo -n "Enter your name: "
-read name
-
-echo -n "Enter your email address: "
+echo -n "Enter your email address to generate an SSH key (leave blank for no ssh key): "
 read email
 
-echo -n "Enter your user folder: "
-read user
-
-echo -n "Generate an SSH key for $email? (y/n) "
-read genssh
-
-if [ "$genssh" = "y" ]
+if [ "$email" != "" && "$email" != " " ]
 then
     ssh-keygen -t rsa -C "$email"
 fi
-
-sed -i '' 's/_USER_/'$user'/g' .gitconfig
-sed -i '' 's/_EMAIL_/'$email'/g' .gitconfig
-sed -i '' 's/_NAME_/'$name'/g' .gitconfig
 
 # Install Homebrew ____________________________________________________________
 echo "Installing Homebrew and packages..."

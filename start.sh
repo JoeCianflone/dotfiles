@@ -42,11 +42,11 @@ echo "Installing Casks..."
 
 # Install Folders _______________________________________________________________
 echo "Installing Valet and Code Download..."
-. "$DOTFILES_DIR/_setup/code.sh"
+. "$DOTFILES_DIR/_setup/github.sh"
 
 # Install VSCode Settings _______________________________________________________________
 echo "Installing Editors..."
-. "$DOTFILES_DIR/_setup/editors.sh"
+. "$DOTFILES_DIR/_setup/editorsettings.sh"
 
 
 

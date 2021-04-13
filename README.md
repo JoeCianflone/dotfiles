@@ -27,3 +27,7 @@ You'll need to `cd` into the correct folder then you can run `start.sh` that wil
 ## Step 3: Manual Stuff
 
 The OBS settings are going to need to be imported manually, there's no way to do that via the CLI. Also stream keys are ignored and not saved out (for obvious reasons). You'll need to regenerate them and add them into OBS manually too.
+
+## Notes
+
+- I used to copy over the files from the `dots` folder to my home folder. This worked fine, but as you make changes to them, things get out of sync. As a result of this I've decided that they will be symlinked. See `_setup/links.sh` to understand.

@@ -30,15 +30,14 @@ valet install
 cd "$DOTFILES_DIR/Sites"
 
 cd SHYFT
-valet park
-
 git clone  git@github.com:JoeCianflone/community.git
 git clone  git@github.com:JoeCianflone/beckerballot.git
 
-cd ../PROJECTS
 valet park
 
+cd ../PROJECTS
 git clone git@github.com:JoeCianflone/buildo-baggins.git
+valet park
 
 cd ../RUTGERS
 valet park

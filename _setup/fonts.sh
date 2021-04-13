@@ -10,3 +10,5 @@ brew install font-noto-sans
 brew install font-heebo
 brew install font-bitter
 brew install font-playfair-display
+brew install font-jetbrains-mono
+brew install font-jetbrains-mono-nerd-font

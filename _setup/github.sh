@@ -48,5 +48,4 @@ git clone git@github.com:/JoeCianflone/Notes .
 cd "$DOTFILES_DIR/Video/"
 git clone git@github.com:JoeCianflone/video-assets.git ASSETS
 
-
 fi

@@ -26,7 +26,7 @@ You'll need to `cd` into the correct folder then you can run `start.sh` that wil
 
 ## Step 3: Manual Stuff
 
-The OBS settings are going to need to be imported manually, there's no way to do that via the CLI. Also stream keys are ignored and not saved out (for obvious reasons). You'll need to regenerate them and add them into OBS manually too.
+The OBS settings are going to need to be imported manually, there's no way to do that via the CLI. Also stream keys are ignored and not saved out (for obvious reasons). You'll need to regenerate them and add them into OBS manually too. If you don't know what OBS even is, you should probably just comment that line out.
 
 ## Notes
 

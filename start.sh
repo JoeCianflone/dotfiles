@@ -16,35 +16,35 @@ then
     ssh-keygen -t rsa -C "$email"
 fi
 
-# Install Homebrew ____________________________________________________________
+# Install Homebrew _____________________________________________________________
 echo "Installing Homebrew and packages..."
 . "$DOTFILES_DIR/_setup/brew.sh"
 
-# Install Fonts _______________________________________________________________
+# Install Fonts ________________________________________________________________
 echo "Installing Fonts..."
 . "$DOTFILES_DIR/_setup/fonts.sh"
 
-# Install PHP _______________________________________________________________
+# Install PHP __________________________________________________________________
 echo "Installing PHP pecls and global composer files...."
 . "$DOTFILES_DIR/_setup/php.sh"
 
-# Install Yarn _______________________________________________________________
+# Install Yarn _________________________________________________________________
 echo "Installing Yarn...."
 . "$DOTFILES_DIR/_setup/yarn.sh"
 
-# Symlinks _______________________________________________________________
+# Symlinks _____________________________________________________________________
 echo "Setting up symlinks..."
 . "$DOTFILES_DIR/_setup/links.sh"
 
-# Install Casks _______________________________________________________________
+# Install Casks ________________________________________________________________
 echo "Installing Casks..."
 . "$DOTFILES_DIR/_setup/casks.sh"
 
-# Install Folders _______________________________________________________________
+# Install Folders ______________________________________________________________
 echo "Installing Valet and Code Download..."
 . "$DOTFILES_DIR/_setup/github.sh"
 
-# Install VSCode Settings _______________________________________________________________
+# Install VSCode Settings _____________________________________________________
 echo "Installing Editors..."
 . "$DOTFILES_DIR/_setup/editorsettings.sh"
 

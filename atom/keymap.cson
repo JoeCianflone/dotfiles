@@ -33,3 +33,7 @@
 
 'atom-workspace':
   'cmd-shift-n': 	'advanced-open-file:toggle'
+
+'atom-text-editor:not([mini])':
+  'alt-up': 'editor:move-line-up'
+  'alt-down': 'editor:move-line-down'

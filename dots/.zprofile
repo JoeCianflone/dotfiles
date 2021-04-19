@@ -61,9 +61,9 @@ function editorexport() {
     code --list-extensions | xargs -L 1 echo code --install-extension >> "$DOTFILES_DIR.vscode/extensions.sh"
 
     # Copy all the stuff for Atom...
-    apm list --installed --bare > "$DOTFILES_DIR.atom/package.txt"
-    cp ~/.atom/config.cson ~/.repositories/.atom/config.cson
-    cp ~/.atom/keymap.cson ~/.repositories/.atom/keymap.cson
+    apm list --installed --bare > "$DOTFILES_DIR/atom/package.txt"
+    cp ~/.atom/config.cson "$DOTFILES_DIR/atom/config.cson"
+    cp ~/.atom/keymap.cson "$DOTFILES_DIR/atom/keymap.cson"
 }
 
 function editorimport() {
@@ -73,7 +73,7 @@ function editorimport() {
 
     # Install packages and get Atom working...
     apm install --packages-file "$DOTFILES_DIR.atom/package.txt"
-    cp ~/.repositories/.atom/config.cson ~/.atom/config.cson
-    cp ~/.repositories/.atom/keymap.cson ~/.atom/keymap.cson
+    cp "$DOTFILES_DIR/config.cson" ~/.atom/config.cson
+    cp "$DOTFILES_DIR/keymap.cson" ~/.atom/keymap.cson
 }
 

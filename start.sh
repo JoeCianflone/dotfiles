@@ -32,10 +32,6 @@ echo "Installing PHP pecls and global composer files...."
 echo "Installing Yarn...."
 . "$DOTFILES_DIR/_setup/yarn.sh"
 
-# Symlinks _____________________________________________________________________
-echo "Setting up symlinks..."
-. "$DOTFILES_DIR/_setup/links.sh"
-
 # Install Casks ________________________________________________________________
 echo "Installing Casks..."
 . "$DOTFILES_DIR/_setup/casks.sh"
@@ -46,16 +42,8 @@ echo "Installing Valet and Code Download..."
 
 # Install VSCode Settings _____________________________________________________
 echo "Installing Editors..."
-. "$DOTFILES_DIR/_setup/editorsettings.sh"
+. "$DOTFILES_DIR/_setup/editors.sh"
 
-
-
-
-
-
-
-
-
-
-
-
+# Symlinks _____________________________________________________________________
+echo "Setting up symlinks..."
+. "$DOTFILES_DIR/_setup/links.sh"

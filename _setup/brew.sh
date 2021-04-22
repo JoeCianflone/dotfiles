@@ -22,5 +22,6 @@ brew install redis
 brew install sass/sass/sass
 brew install php 
 brew install mas
+brew install go
 brew install pandoc
 

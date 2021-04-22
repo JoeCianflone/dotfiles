@@ -38,6 +38,9 @@ alias nah='git reset --hard'
 
 alias repos="cd $REPOSITORY_HOME"
 alias dotfiles="cd $DOTFILES_DIR" 
+alias community="~/.repositories/Sites/SHYFT/community"
+
+alias ..="cd .."
 
 # This is probably not necessary, but I'd rather be safe than sorry
 # This file is ignored and does not go to github
@@ -52,28 +55,3 @@ function book() {
   pandoc $1.md --standalone -o $2.odt
   open $2.odt
 }
-
-function editorexport() {
-    # Copy all the stuff for VSCode...
-    cp ~/.vscode/settings.json "$DOTFILES_DIR/.vscode/"
-
-    echo '#!/bin/sh' > "$DOTFILES_DIR.vscode/extensions.sh"
-    code --list-extensions | xargs -L 1 echo code --install-extension >> "$DOTFILES_DIR.vscode/extensions.sh"
-
-    # Copy all the stuff for Atom...
-    apm list --installed --bare > "$DOTFILES_DIR/atom/package.txt"
-    cp ~/.atom/config.cson "$DOTFILES_DIR/atom/config.cson"
-    cp ~/.atom/keymap.cson "$DOTFILES_DIR/atom/keymap.cson"
-}
-
-function editorimport() {
-    # Install Settings and Get VSCode working...
-    cp "$DOTFILES_DIR/settings.json" ~/.vscode/settings.json
-    . "$DOTFILES_DIR/extensions.sh"
-
-    # Install packages and get Atom working...
-    apm install --packages-file "$DOTFILES_DIR.atom/package.txt"
-    cp "$DOTFILES_DIR/config.cson" ~/.atom/config.cson
-    cp "$DOTFILES_DIR/keymap.cson" ~/.atom/keymap.cson
-}
-

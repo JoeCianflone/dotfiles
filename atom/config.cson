@@ -29,9 +29,9 @@
   "default-language":
     defaultLanguage: "markdown"
   editor:
-    defaultFontSize: 24
+    defaultFontSize: 22
     fontFamily: "Inconsolata, Menlo, Consolas, DejaVu Sans Mono, monospace"
-    fontSize: 25
+    fontSize: 18
     lineHeight: 1.8
     preferredLineLength: 120
     scrollPastEnd: true
@@ -61,3 +61,5 @@
       "laravel"
       "AsciiDoc"
     ]
+  welcome:
+    showOnStartup: false

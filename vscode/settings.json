@@ -1,7 +1,7 @@
 {
     "editor.minimap.enabled": false,
     "workbench.sideBar.location": "right",
-    "editor.fontSize": 28,
+    "editor.fontSize": 24,
     "editor.fontFamily": "\"Inconsolata\"",
     "editor.renderWhitespace": "all",
     "editor.wordWrapColumn": 240,
@@ -9,7 +9,7 @@
     "debug.console.lineHeight": 20,
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.lineHeight": 1.3,
-    "editor.lineHeight": 54,
+    "editor.lineHeight": 50,
     "editor.formatOnSave": true,
     "postcssSorting.config": {
       "order": [
@@ -47,5 +47,12 @@
     "editor.cursorBlinking": "phase",
     "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
     "workbench.editor.closeEmptyGroups": false,
+    "workbench.preferredDarkColorTheme": "Monokai Pro (Filter Octagon)",
+    "workbench.colorCustomizations": {
+      "[Monokai Pro (Filter Octagon)]": {
+        "gitDecoration.modifiedResourceForeground": "#f8f4ea",
+      }
+    
+    },
     "window.zoomLevel": -1,
   }

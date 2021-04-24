@@ -22,8 +22,6 @@
       "properties-order": "alphabetical",
       "unspecified-properties-position": "bottom"
     },
-    "simple-php-cs-fixer.config": ".php_cs",
-    "simple-php-cs-fixer.save": true,
     "extensions.ignoreRecommendations": false,
     "emmet.triggerExpansionOnTab": true,
     "explorer.compactFolders": false,
@@ -34,7 +32,7 @@
       "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1612219185936,
+    "php-cs-fixer.lastDownload": 1619207877771,
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -52,7 +50,12 @@
       "[Monokai Pro (Filter Octagon)]": {
         "gitDecoration.modifiedResourceForeground": "#f8f4ea",
       }
-    
     },
     "window.zoomLevel": -1,
+    "files.associations": {
+      ".php_cs": "php"
+    },
+    "php-cs-fixer.allowRisky": true,
+    "intelephense.format.enable": false,
+    "php-cs-fixer.rules": "@PSR,@PSR122",
   }

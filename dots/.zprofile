@@ -40,6 +40,9 @@ alias repos="cd $REPOSITORY_HOME"
 alias dotfiles="cd $DOTFILES_DIR" 
 alias community="~/.repositories/Sites/SHYFT/community"
 
+alias notes="cd $REPOSITORY_HOME/notes && atom ./"
+alias dots="cd $DOTFILES_DIR && code ./"
+
 alias ..="cd .."
 
 # This is probably not necessary, but I'd rather be safe than sorry

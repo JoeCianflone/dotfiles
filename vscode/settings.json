@@ -51,11 +51,11 @@
         "gitDecoration.modifiedResourceForeground": "#f8f4ea",
       }
     },
-    "window.zoomLevel": -1,
     "files.associations": {
       ".php_cs": "php"
     },
     "php-cs-fixer.allowRisky": true,
     "intelephense.format.enable": false,
     "php-cs-fixer.rules": "@PSR,@PSR122",
+    "window.zoomLevel": 2,
   }

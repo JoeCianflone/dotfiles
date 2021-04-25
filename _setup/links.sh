@@ -12,9 +12,11 @@ ln -sfv "$DOTFILES_DIR/dots/jc-steeef.zsh-theme" ~/.oh-my-zsh/themes/jc-steeef.z
 # This file gets generated automatically by VSCode and Atom  so you need to delete 
 # them before you're able to symlink
 rm -Rf ~/Library/Application\ Support/Code/User/settings.json 
+rm -Rf ~/Library/Application\ Support/Code/User/keybindings.json 
 rm -Rf  ~/.atom/config.cson
 rm -Rf  ~/.atom/keymap.cson
 
 ln -sfv "$DOTFILES_DIR/vscode/settings.json" ~/Library/Application\ Support/Code/User/settings.json 
+ln -sfv "$DOTFILES_DIR/vscode/keybindings.json" ~/Library/Application\ Support/Code/User/keybindings.json 
 ln -sfv "$DOTFILES_DIR/atom/config.cson" ~/.atom/config.cson
 ln -sfv "$DOTFILES_DIR/atom/keymap.cson" ~/.atom/keymap.cson

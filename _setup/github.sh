@@ -40,6 +40,9 @@ git clone git@github.com:JoeCianflone/buildo-baggins.git
 valet park
 
 cd ../RUTGERS
+git clone git@github.com:JoeCianflone/rutgers-web-2-students.git web2-students
+git clone git@github.com:JoeCianflone/rutgers-web-2-teachers.git web2-teachers
+
 valet park
 
 cd "$DOTFILES_DIR/Notes"

@@ -57,5 +57,21 @@
     "php-cs-fixer.allowRisky": true,
     "intelephense.format.enable": false,
     "php-cs-fixer.rules": "@PSR,@PSR122",
-    "window.zoomLevel": 2,
+    "vetur.format.defaultFormatterOptions": {
+      "js-beautify-html": {
+        "wrap_attributes": "force-expand-multiline"
+      },
+      "prettyhtml": {
+        "printWidth": 100,
+        "singleQuote": false,
+        "wrapAttributes": false,
+        "sortAttributes": false
+      }
+    },
+    "vetur.format.scriptInitialIndent": true,
+    "vetur.format.styleInitialIndent": true,
+    "vetur.format.enable": false,
+    "window.zoomLevel": -1,
+    "vetur.validation.templateProps": true,
+    "vetur.format.defaultFormatter.html": "prettier",
   }

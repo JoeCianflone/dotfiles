@@ -6,9 +6,8 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="$PATH:/usr/local/sbin"
 export PATH="$PATH:vendor/bin"
-export EDITOR='code -w'
-
 export PATH="$HOME/.cargo/bin:$PATH"
+export EDITOR='code -w'
 
 export REPOSITORY_HOME="$HOME/.repositories"
 export DOTFILES_DIR="$REPOSITORY_HOME/dotfiles"

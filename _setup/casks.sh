@@ -36,4 +36,4 @@ brew install --cask spotify
 brew install --cask obs
 brew install --cask obs-websocket
 brew install --cask vlc
-
+brew install --cask pliim

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-. "$DOTFILES_DIR/vscode/extensions.sh"
-apm install --packages-file "$DOTFILES_DIR/atom/package.list"
+. "$DOTFILES_HOME/vscode/extensions.sh"
+apm install --packages-file "$DOTFILES_HOME/atom/package.list"

@@ -1,49 +1,54 @@
 #!/bin/sh
 
-DOTFILES_DIR='~/.repositories/dotfiles'
+DOTFILES_HOME='~/.repositories/dotfiles'
 
-if [ "$DOTFILES_DIR" = "" ]
+if [ "$DOTFILES_HOME" = "" ]
 then
-    echo "Cannot continue until you set DOTFILES_DIR in start.sh"
+    echo "Cannot continue until you set DOTFILES_HOME in start.sh"
     exit
 fi
 
-echo -n "Enter your email address to generate an SSH key (leave blank for no ssh key): "
+echo -n "Enter your email address needed for your SSH key: "
 read email
 
-if [ "$email" != "" && "$email" != " " ]
+
+if [ "$sshKey" == "" || "$sshKey" == " " || "$sshKey" == "Y" || "$sshKey" == "y" ]
 then
     ssh-keygen -t rsa -C "$email"
 fi
 
+# Hide the login time of the terminal _________________________________________
+echo "Hushlogin..."
+touch ~/.hushlogin
+
 # Install Homebrew _____________________________________________________________
 echo "Installing Homebrew and packages..."
-. "$DOTFILES_DIR/_setup/brew.sh"
+. "$DOTFILES_HOME/_setup/brew.sh"
 
 # Install Fonts ________________________________________________________________
 echo "Installing Fonts..."
-. "$DOTFILES_DIR/_setup/fonts.sh"
+. "$DOTFILES_HOME/_setup/fonts.sh"
 
 # Install PHP __________________________________________________________________
 echo "Installing PHP pecls and global composer files...."
-. "$DOTFILES_DIR/_setup/php.sh"
+. "$DOTFILES_HOME/_setup/php.sh"
 
 # Install Yarn _________________________________________________________________
 echo "Installing Yarn...."
-. "$DOTFILES_DIR/_setup/yarn.sh"
+. "$DOTFILES_HOME/_setup/yarn.sh"
 
 # Install Casks ________________________________________________________________
 echo "Installing Casks..."
-. "$DOTFILES_DIR/_setup/casks.sh"
+. "$DOTFILES_HOME/_setup/casks.sh"
 
 # Install Folders ______________________________________________________________
 echo "Installing Valet and Code Download..."
-. "$DOTFILES_DIR/_setup/github.sh"
+. "$DOTFILES_HOME/_setup/github.sh"
 
 # Install VSCode Settings _____________________________________________________
 echo "Installing Editors..."
-. "$DOTFILES_DIR/_setup/editors.sh"
+. "$DOTFILES_HOME/_setup/editors.sh"
 
 # Symlinks _____________________________________________________________________
 echo "Setting up symlinks..."
-. "$DOTFILES_DIR/_setup/links.sh"
+. "$DOTFILES_HOME/_setup/links.sh"

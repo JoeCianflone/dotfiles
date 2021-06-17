@@ -27,7 +27,7 @@ then
 cd ~
 valet install
 
-cd "$DOTFILES_DIR/Sites"
+cd "$DOTFILES_HOME/Sites"
 
 cd SHYFT
 git clone  git@github.com:JoeCianflone/community.git
@@ -45,10 +45,10 @@ git clone git@github.com:JoeCianflone/rutgers-web-2-teachers.git web2-teachers
 
 valet park
 
-cd "$DOTFILES_DIR/Notes"
+cd "$DOTFILES_HOME/Notes"
 git clone git@github.com:/JoeCianflone/Notes .
 
-cd "$DOTFILES_DIR/Video/"
+cd "$DOTFILES_HOME/Video/"
 git clone git@github.com:JoeCianflone/video-assets.git ASSETS
 
 fi

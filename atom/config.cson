@@ -31,7 +31,7 @@
   editor:
     defaultFontSize: 22
     fontFamily: "Inconsolata, Menlo, Consolas, DejaVu Sans Mono, monospace"
-    fontSize: 18
+    fontSize: 31
     lineHeight: 1.8
     preferredLineLength: 120
     scrollPastEnd: true

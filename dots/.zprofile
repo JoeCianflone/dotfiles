@@ -10,7 +10,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export EDITOR='code -w'
 
 export REPOSITORY_HOME="$HOME/.repositories"
-export DOTFILES_DIR="$REPOSITORY_HOME/dotfiles"
+export WEBSITE_HOME="$REPOSITORY_HOME/Sites"
+export DOTFILES_HOME="$REPOSITORY_HOME/dotfiles"
 
 # Aliases _____________________________________________________________________
 alias killem="killall Finder" 
@@ -35,18 +36,22 @@ alias gp='git push origin'
 alias gs='git status'
 alias nah='git reset --hard'
 
+alias ..="cd .."
+alias ...="cd ../../"
+
 alias repos="cd $REPOSITORY_HOME"
-alias dotfiles="cd $DOTFILES_DIR" 
-alias community="~/.repositories/Sites/SHYFT/community"
+alias dotfiles="cd $DOTFILES_HOME" 
 
 alias notes="cd $REPOSITORY_HOME/notes && atom ./"
-alias dots="cd $DOTFILES_DIR && code ./"
+alias dots="cd $DOTFILES_HOME && code ./"
 
-alias ..="cd .."
+# Open individual projcts _____________________________________________________
+alias community="$WEBSITE_HOME/SHYFT/community && code ./"
+
 
 # This is probably not necessary, but I'd rather be safe than sorry
 # This file is ignored and does not go to github
-. "$DOTFILES_DIR/dots/ssh"
+. "$DOTFILES_HOME/dots/ssh"
 
 # Simple Function  ____________________________________________________________
 function pdword() {

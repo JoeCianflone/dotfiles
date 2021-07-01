@@ -51,4 +51,7 @@ git clone git@github.com:/JoeCianflone/Notes .
 cd "$DOTFILES_HOME/Video/"
 git clone git@github.com:JoeCianflone/video-assets.git ASSETS
 
+cd "$DOTFILES_HOME/IHaveTheRecepits/"
+git clone git@github.com:JoeCianflone/IHaveTheRecepits.git .
+
 fi

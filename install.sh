@@ -10,6 +10,7 @@ mkdir dotfiles
 mkdir Notes
 mkdir Sites
 mkdir Videos
+mkdir IHaveTheRecepits
 
 cd Sites/
 mkdir SHYFT

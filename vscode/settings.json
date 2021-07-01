@@ -32,7 +32,7 @@
       "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1623690372018,
+    "php-cs-fixer.lastDownload": 1624890253135,
     "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -74,4 +74,6 @@
     "vetur.validation.templateProps": true,
     "vetur.format.defaultFormatter.html": "prettier",
     "window.zoomLevel": -1,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
   }

@@ -9,6 +9,7 @@ brew install --cask the-unarchiver
 brew install --cask sloth
 brew install --cask little-snitch
 brew install --cask micro-snitch
+brew install --cask airfoil
 
 # editors 
 brew install --cask atom
